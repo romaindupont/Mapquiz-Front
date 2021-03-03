@@ -1,0 +1,30 @@
+@use './../../../styles/vars';
+
+.footer {
+  font-family: 'Roboto', sans-serif;
+  
+  &-goodAnswer {
+      font-weight: normal;
+      font-family: 'Roboto', sans-serif;
+      color: black;
+  }
+
+  &-trivia {
+    padding-bottom: 1.2rem;
+  }
+}
+
+.button {
+  display: inline-block;
+  color: #7C70BC;
+  font-weight: bold;
+  padding: 0.8rem 1.2rem;
+  border-radius: 4px;
+  margin: 0.5rem 1rem;
+  border: #7C70BC solid 1px;
+  cursor: pointer;
+  background-color: white;
+  &:hover {
+      background-color: #F5ECFF;
+  }
+}

@@ -1,0 +1,103 @@
+.homepage {
+    width: 100%;
+    height: calc(100vh - 80px);
+    background-image: url("../../assets/images/background-home.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+
+    @media only screen and (max-width: 810px) {
+        background-image: none;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    &-bloc {
+        padding-left: 6rem;
+        padding-top: 2rem;
+        max-width: 35%;
+
+        @media only screen and (max-width: 810px) {
+            max-width: 95%;
+            padding-left: 0;
+            margin: 0 auto;
+        }
+    }
+
+    &-title {
+        font-size: 3em;
+        font-family: 'Lilita One', cursive;
+        font-weight: lighter;
+        color: #272566;
+
+        @media only screen and (max-width: 810px) {
+            font-size: 2.4em;
+        }
+
+        @media only screen and (max-width: 435px) {
+            font-size: 1.4em;
+        }
+    }
+
+    &-description {
+        color: #696795;
+
+        @media only screen and (max-width: 810px) {
+            font-size: 1.4em;
+        }
+
+        @media only screen and (max-width: 435px) {
+            font-size: 1em;
+        }
+    }
+
+    &-content {
+        text-align: justify;
+        margin-bottom: 2.5rem;
+
+        @media only screen and (max-width: 810px) {
+            margin-bottom: 1.5rem;
+        }
+
+        @media only screen and (max-width: 435px) {
+            margin-bottom: 0.5rem;
+        }
+    }
+    
+    &-button { 
+        text-transform: uppercase;
+        background-color: #ff4167;
+        border: none;
+        color: white;
+        border-radius: 2rem;
+        padding: 0.4rem 2rem;
+        font-family: 'Lilita One', cursive, sans-serif;
+        font-weight: lighter;
+        border-bottom: #FF98AF solid 4px;
+        margin-top: 1rem;
+        display: inline-block;
+        cursor: url('../../assets/images/cursor.png'), pointer;
+        outline: none;
+        @media only screen and (max-width: 810px) {
+            margin-bottom: 1.5rem;
+        }
+    }
+
+    &-img {
+        width: 1.2rem;
+        height: 1.2rem;
+        padding-left: 1rem;
+    }
+
+    &-illustration {
+
+        display: block;
+        margin: 0 auto;
+        width: 75%;
+        max-width: 100%;
+        height: auto;
+        @media only screen and (min-width: 815px) {
+            display: none;
+        }
+    }
+}

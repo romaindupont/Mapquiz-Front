@@ -1,0 +1,50 @@
+// == Spacing
+$gutter: 1rem;
+
+// == Colors
+$firstColor: #272566;
+$lightColor: #696795;
+$secondColor: #ea9c50;
+$thirdColor: #ff4167;
+$thirdColor-lighter: #FF98AF;
+
+$blank-light-color: white;
+$blank-dark-color: black;
+
+// == Typo
+$title: 'Lilita One', cursive, sans-serif;
+$text: 'Roboto', sans-serif;
+
+$weight-light: lighter;
+$weight-normal: normal;
+$weight-bold: bold;
+
+$size-small: 0.8rem;
+$size-normal: 1rem;
+$size-big: 1.5rem;
+$size-bigger: 2rem;
+
+// == Elements
+
+// Button
+$pdg-btn: 0.4rem 5rem;
+$brd-bttm-btn: #FF98AF solid 4px;
+$brd-rad-btn: 2rem;
+
+// Breakpoints 
+
+// Small smartphone (portrait view)
+$screnn-xsm-min: 300px;
+
+// Small tablets and large smartphones (portrait view)
+$screen-sm-min: 420px;
+ 
+// Small tablets (portrait view)
+$screen-md-min: 690px;
+ 
+// Tablets and small desktops
+$screen-lg-min: 992px;
+ 
+// Large tablets and desktops
+$screen-xl-min: 1200px;
+

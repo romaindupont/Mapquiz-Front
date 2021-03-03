@@ -1,0 +1,59 @@
+@use './../../../styles/vars';
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+
+  &-category {
+    margin: 0;
+  }   
+  &-counter {
+    margin: 0;
+  }  
+
+      &-exit {
+        width: 120%;
+      }
+
+      &-quitQuizButton {
+        list-style-type: none;
+        color: #ea9c50;
+        padding: 0.5rem;
+        border: none;
+        outline: none;
+        background-color: white;
+        border-radius: 4px;
+        width: 4rem;
+        transition: 0.3s;
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+
+      &-question {
+        font-size: 1.5rem;
+      }
+      
+      &-questionDisplay {
+        margin-bottom: 0.5rem;
+      }
+      
+      &-image {
+        width: 100%;
+        max-width: 30%;
+        height: auto;
+        
+        @media only screen and (max-width: 700px) {
+          display: none;
+        }
+      }
+
+      &-counter {
+        font-family: 'Lilita One', cursive, sans-serif;
+        font-weight: lighter;
+        color: #5B529A;
+        font-size: 2rem;
+      }
+}

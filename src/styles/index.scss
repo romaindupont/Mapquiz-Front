@@ -1,0 +1,18 @@
+@use 'vars';
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  cursor: url('../assets/images/cursor.png'), pointer;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Lilita One', cursive, sans-serif;
+  font-weight: lighter;
+}
+
+a {
+  text-decoration: none;
+}

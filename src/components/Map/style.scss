@@ -1,0 +1,63 @@
+@use './../../styles/vars';
+
+.map{
+
+  background: url("../../assets/images/bgocean.jpg") repeat center;
+  background-size: cover;
+  height: calc(100vh - 79.88px);
+
+  &-content{
+    padding-top: 1rem;
+  }
+
+  &-background{
+    width: 100%;
+    height: 85vh;
+    z-index: 100;
+  }
+}
+
+.europe , .am-sud , .am-nord , .afrique , .australie , .asie , .antartique {
+  cursor: pointer;
+}
+
+.Europe:hover {
+  transform: scale(1.1);
+  // transition: 0.3s;
+  transform-origin: 72% 45%;
+}
+
+.Europe:hover {
+  transform: scale(1.1);
+  transform-origin: 72% 45%;
+}
+
+.Afrique:hover {
+  transform: scale(1.1);
+  transform-origin: 72% 32%;
+}
+
+.Asie:hover {
+  transform: scale(1.1);
+  transform-origin: 64% 38%;
+}
+
+.AmrNord:hover {
+  transform: scale(1.1);
+  transform-origin: 28% 0%;
+}
+
+.AmrSud:hover {
+  transform: scale(1.1);
+  transform-origin: 29% 17%;
+}
+
+.Oceanie:hover {
+  transform: scale(1.1);
+  transform-origin: 87% 37%;
+}
+
+.Antartique:hover {
+  transform: scale(1.1);
+  transform-origin: 15% 106%;
+}

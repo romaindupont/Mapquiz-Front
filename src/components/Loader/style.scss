@@ -1,0 +1,17 @@
+@use './../../styles/vars';
+
+.loader {
+  width: 100px;
+  height: 100px;
+  animation : tourne 4s linear infinite;
+  position: absolute;
+  bottom: 60px;
+  left: 50px;
+}
+.loader-image {
+  transform: translate3d(50px, -18px, -126px);
+}
+@keyframes tourne {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(360deg);}
+}

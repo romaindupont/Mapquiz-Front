@@ -1,0 +1,193 @@
+@use './../../styles/vars';
+
+.registration {
+  text-align: center;
+  font-size: 1.4rem;
+  overflow: none;
+  margin: 4% auto;
+  @media only screen and (min-width: 300px) {
+    font-size: 1rem;
+  }
+  @media only screen and (min-width: 420px) {
+    font-size: 1.2rem;
+  }
+  @media only screen and (min-width: 690px) {
+    font-size: 1.4rem;
+  }
+  
+
+  &-title {
+    font-family: 'Lilita One', cursive;
+    font-weight: lighter;
+    color: #272566;
+  }
+
+  &-form {
+    display: inline-grid;
+  }
+
+  #registration-select {
+    border: grey solid 1px;
+    font-size: 1rem;
+    width: 16rem;
+    padding: 0.4rem;
+    // margin-top: 1rem;
+    border-radius: 17px;
+    outline: none;
+    margin: 1rem auto;
+  }
+
+  #registration-select {
+    background-color: white;
+  }
+
+  &-email, 
+  &-password,
+  &-password2,
+  &-pseudo,
+  &-select {
+    color: #696795;
+    font-weight: bold;
+  }
+
+  &-check {
+    font-size: 1rem;
+    outline: none;
+  }
+
+  &-button { 
+    text-transform: uppercase;
+    background-color: #ea9c50;
+    border: none;
+    color: white;
+    border-radius: 2rem;
+    padding: 0.4rem 5rem;
+    font-family: 'Lilita One', cursive;
+    font-weight: lighter;
+    border-bottom: #E9D8AA solid 4px;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    width: 19rem;
+    text-align: center;
+    margin: 1rem auto;
+    outline: none;
+    &:hover {
+      transform: scale(1.1);
+    }
+    
+  }
+
+  &-suppression { 
+    text-transform: uppercase;
+    background-color: #FE4265;
+    border: none;
+    color: white;
+    border-radius: 2rem;
+    padding: 0.4rem 5rem;
+    font-family: 'Lilita One', cursive;
+    font-weight: lighter;
+    border-bottom: #FF98AF solid 4px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    width: 19rem;
+    text-align: center;
+    margin: 1rem auto;
+    outline: none;
+    margin-top: 1%;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  &-img {
+    width: 1.3rem;
+    height: 1.3rem;
+    padding-left: 1.2rem;
+  }
+
+  &-link {
+    color: white;
+  }
+
+  &-link--black {
+    color: black;
+  }
+
+  &-span {
+    text-decoration: underline;
+  }
+
+  &-option1-2 {
+    background-image: url("../../assets/images/panda.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 306px;
+    width: 75%;
+    margin: 1rem auto;
+  }
+
+  &-option1-8 {
+    background-image: url("../../assets/images/canard.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 306px;
+    width: 75%;
+    margin: 1rem auto;
+  }
+
+  &-option1-6 {
+    background-image: url("../../assets/images/cat.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 306px;
+    width: 75%;
+    margin: 1rem auto;
+  }
+
+  &-option1-5 {
+    background-image: url("../../assets/images/dog.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 306px;
+    width: 80%;
+    margin: 1rem auto;
+  }
+
+  &-option1-4 {
+    background-image: url("../../assets/images/marmotte.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 306px;
+    width: 111%;
+    margin: 1rem auto;
+  }
+
+  &-option1-1 {
+    background-image: url("../../assets/images/ourson.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 306px;
+    width: 76%;
+    margin: 1rem auto;
+  }
+
+  &-option1-7 {
+    background-image: url("../../assets/images/carty.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 306px;
+    width: 112%;
+    margin: 1rem auto;
+  }
+  &-option1-3 {
+    background-image: url("../../assets/images/surfboard.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 306px;
+    width: 50%;
+    margin: 1rem auto;
+  }
+}

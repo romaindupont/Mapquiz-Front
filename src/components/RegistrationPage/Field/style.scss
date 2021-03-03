@@ -1,0 +1,12 @@
+@use './../../../styles/vars';
+
+.registration-input {
+    border: grey solid 1px;
+    font-size: 1rem;
+    width: 16rem;
+    padding: 0.4rem;
+    // margin-top: 1rem;
+    border-radius: 17px;
+    outline: none;
+    margin: 1rem auto;
+  }

@@ -1,0 +1,67 @@
+.instruction {
+
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 6rem;
+
+  @media only screen and (max-width: 475px) {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &-carty{
+    @media only screen and (max-width: 475px) {
+      display: none;
+    }
+  }
+
+  &-step{
+    border: 2px solid #272566;
+    border-radius: 5px;
+
+    padding: 0 1rem;
+    margin-left: 3rem;
+
+    max-width: 40%;
+
+    position: relative;
+
+    @media only screen and (max-width: 768px) {
+      max-width: 60%;
+    }
+
+    @media only screen and (max-width: 475px) {
+      max-width: 90%;
+      margin: 0 auto;
+    }
+  }
+
+  &-step:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 0;
+    height: 0;
+    border: 2em solid transparent;
+    border-right-color: #272566;
+    border-left: 0;
+    border-top: 0;
+    margin-top: -0.375em;
+    margin-left: -2em;
+
+    @media only screen and (max-width: 475px) {
+      border: none;
+    }
+  }
+
+  &-picture{
+    width: 60%;
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.instruction:nth-child(2n+1) {
+  justify-content: flex-end;
+}

@@ -1,0 +1,78 @@
+@use './../../../../styles/vars';
+
+.questionField {
+  margin: 4rem;
+
+}
+.answers {
+
+  &-subtitle {
+    margin-bottom: 0.5rem;
+  }
+
+  &-answer {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+}
+
+.answer {
+  
+  &-li {
+    list-style-type: none;
+    color: #7C70BC;
+    font-weight: bold;
+    padding: 0.8rem 1.2rem;
+    // border: 2px solid #ea9c50;
+    border-radius: 4px;
+    margin: 0.5rem 1rem;
+    max-width: 25%;
+    border: #7C70BC solid 1px;
+    cursor: pointer;
+
+    @media only screen and (max-width: 700px) {
+		  max-width: 90%;
+	  }
+  }
+  &-li:hover {
+    background-color: #F5ECFF;
+
+  }
+  
+  &-li--goodAnswer {
+    // border: dashed;
+    background-color: #7bed9f;
+    color: white;
+    font-weight: bold;
+    border: none;
+    &:hover {
+      background-color: #7bed9f;
+    }
+  }
+
+  &-li--badAnswer {
+    // border: dashed;
+    background-color: #ff4167;
+    color: white;
+    font-weight: bold;
+    border: none;
+    &:hover {
+      background-color: #ff4167;
+    }
+  }
+
+  
+
+  &-image {
+    // margin: 1rem auto;
+    display: block;
+    max-width: 10rem;
+    height: auto;
+
+      @media only screen and (max-width: 1045px) {
+		  display: none;
+	  }
+  }
+}

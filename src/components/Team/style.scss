@@ -1,0 +1,42 @@
+.team {
+
+  font-family: 'Roboto', sans-serif;
+  color: #272566;
+  text-align: center;
+  max-width: 90%;
+  margin: 0 auto;
+
+  &-subtitle {
+    font-family: 'Lilita One', cursive;
+    font-weight: lighter;
+    color: #272566;
+    font-size: 2.8rem;
+    margin: 4% auto;
+    @media only screen and (min-width: 300px) {
+      font-size: 1.5rem;
+    }
+    @media only screen and (min-width: 420px) {
+      font-size: 2rem;
+    }
+    @media only screen and (min-width: 690px) {
+      font-size: 2.8rem;
+    }
+  }
+
+  &-btn {
+    width: max-content;
+    align-self: center;
+    text-transform: uppercase;
+    display: inline-block;
+    background-color: #FE4265;
+    border: none;
+    color: white;
+    border-radius: 2rem;
+    padding: 0.4rem 5rem;
+    font-family: 'Lilita One', cursive;
+    font-weight: lighter;
+    border-bottom: #FF98AF solid 4px;
+    margin: 3rem 0;
+    cursor: pointer;
+  }
+}

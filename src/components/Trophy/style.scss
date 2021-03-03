@@ -1,0 +1,49 @@
+@use './../../styles/vars';
+
+.trophy{
+  &-title{
+    font-family: 'Lilita One', cursive;
+    font-weight: lighter;
+    color: #272566;
+    text-align: center;
+  }
+
+  &-container{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+.trophy-card{
+  padding: 1rem;
+  width: 300px;
+  background-color: #ea9c50;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 8px;
+  margin: 1rem;
+
+  &-title{
+    font-family: 'Lilita One', cursive;
+    font-weight: lighter;
+    color: #fff;
+  }
+
+  &-content{
+    text-align: justify;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  &-lvl{
+    color: #fff;
+    font-weight: bold;
+    font-family: 'Lilita One', cursive;
+  }
+}
+
+.trophy-card-badge {
+  width: 50%;
+}

@@ -1,0 +1,38 @@
+@use './../../styles/vars';
+
+.background {
+    width: 100%;
+    height: calc(100vh - 80px);
+    position: absolute;
+    top: 80px;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.questionForm {
+  max-width: 65%;
+  margin: 0 auto;
+  padding: 3rem;
+
+  // border: solid #272566 1px;
+  border-radius: 10px;
+  // box-shadow: 10px 10px 5px 0px rgba(255, 65, 103, 1);
+  background-color: white;
+
+  text-align: center;
+  overflow-wrap: break-word;
+  
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) !important;
+
+  z-index: 1;
+
+  h1,
+  h2,
+  h3 {
+    font-family: 'Lilita One', cursive, sans-serif;
+    font-weight: lighter;
+    color: #5B529A;
+  }
+}

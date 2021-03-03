@@ -1,0 +1,54 @@
+@use './../../styles/vars';
+
+.unsubscribe {
+  text-align: center;
+  font-size: 1.4rem;
+  overflow: none;
+  margin: 4% auto;
+  @media only screen and (min-width: 300px) {
+    font-size: 1rem;
+  }
+  @media only screen and (min-width: 420px) {
+    font-size: 1.2rem;
+  }
+  @media only screen and (min-width: 690px) {
+    font-size: 1.4rem;
+  }
+
+  &-title {
+    font-family: 'Lilita One', cursive;
+    font-weight: lighter;
+    color: #272566;
+  }
+
+  &-content {
+    color: #696795;
+  }
+  
+  &-image {
+    width: 23%;
+  }
+
+  &-suppression { 
+    text-transform: uppercase;
+    background-color: #FE4265;
+    border: none;
+    color: white;
+    border-radius: 2rem;
+    padding: 0.4rem 5rem;
+    font-family: 'Lilita One', cursive;
+    font-weight: lighter;
+    border-bottom: #FF98AF solid 4px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    width: 27rem;
+    text-align: center;
+    margin: 1rem auto;
+    outline: none;
+    margin-top: 2%;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}

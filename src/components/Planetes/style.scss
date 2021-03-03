@@ -1,0 +1,391 @@
+@use './../../styles/vars';
+
+/* .planetes {
+  background: #000;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+} */
+
+.planetes:before {
+  background: url("../../assets/images/backgroundplanete.jpg")  center;
+  background-size: cover;
+  width: 100%;
+  content: "";
+  opacity: 1;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.soleil-container {
+  // Positionne le soleil au milieu
+  position: absolute;
+  z-index: 0;
+  
+  @media only screen and (min-width: 300px) {
+    top: calc(50% - 0px);
+    left: calc(50% - 25px);
+  }
+  @media only screen and (min-width: 420px) {
+    top: calc(50% - 20px);
+    left: calc(50% - 40px);
+  }
+  @media only screen and (min-width: 690px) {
+    top: calc(50% - 65px);
+    left: calc(50% - 50px);
+  }
+  
+  
+  img {
+    // Taille de l'image
+    
+    position: absolute;
+    transition: 0.5s;
+    top: 0;
+    left: 0;
+    @media only screen and (min-width: 300px) {
+      height: 60px;
+      width: 60px;
+    }
+    @media only screen and (min-width: 420px) {
+      height: 90px;
+      width: 90px;
+    }
+    @media only screen and (min-width: 690px) {
+      height: 120px;
+      width: 120px;
+    }
+
+    &:hover{
+      transform: scale(1.2);
+    }
+  
+  }
+
+  .soleil {
+    background-image: linear-gradient(to bottom, rgba(10,10,10,1), black);
+    border-radius: 1em;
+    color: #fff;
+    opacity: 0;
+    padding: 1em;
+    transform: scale(.8);
+    transform-origin: 0 0;
+    width: 400px;
+
+    h1 {
+      margin: 0 0 1em;
+      text-align: right;
+    }
+
+    h1, li {
+      font-family: 'Space Mono', monospace;
+      opacity: 0;
+    }
+
+
+  }
+}
+
+.mercure-container, .venus-container, .earth-container, .moon-container, .mars-container, .jupiter-container, .saturne-container, .uranus-container, .neptune-container {
+  // On place au départ mercure au milieu
+  position: absolute;
+
+  @media only screen and (min-width: 300px) {
+    // top: calc(50% - 0px);
+    // left: calc(50% - 25px);
+    top: calc(50% - -20px);
+    left: calc(50% - 20px);
+  }
+  @media only screen and (min-width: 420px) {
+    top: calc(50% - -15px);
+    left: calc(50% - 25px);
+  }
+  @media only screen and (min-width: 690px) {
+    top: calc(50% - 25px);
+    left: calc(50% - 25px);
+  }
+
+}
+
+.mercure {
+  animation: spin 8s linear infinite; // fait tourner 
+  background: none;
+  width: 20px;
+  height: 20px;
+  pointer-events: none;
+  transform-origin: 25px;
+  
+
+  img, p {
+    
+    @media only screen and (min-width: 300px) {
+      transform: translateX(-20px) translateY(-20px); // éloigne du soleil
+      width: 15px;
+    }
+    @media only screen and (min-width: 420px) {
+      transform: translateX(-45px) translateY(-45px); // éloigne du soleil
+      width: 20px;
+    }
+    @media only screen and (min-width: 690px) {
+      transform: translateX(-70px) translateY(-70px); // éloigne du soleil
+      width: 30px;
+    }
+    &:hover{
+      width: 60px;
+    }
+  }
+}
+
+.venus {
+  animation: spin 10s linear infinite; // fait tourner 
+  background: none;
+  width: 20px;
+  height: 20px;
+  pointer-events: none;
+  transform-origin: 25px;
+
+  img {
+    
+    @media only screen and (min-width: 300px) {
+      transform: translateX(-30px) translateY(-30px); // éloigne du soleil
+      width: 25px;
+    }
+    @media only screen and (min-width: 420px) {
+      transform: translateX(-55px) translateY(-55px); // éloigne du soleil
+      width: 33px;
+    }
+    @media only screen and (min-width: 690px) {
+      transform: translateX(-90px) translateY(-90px); // éloigne du soleil
+      width: 50px;
+    }
+  }
+
+  img:hover{
+    width: 400px;
+  }
+}
+
+.earth {
+  animation: spin 15s linear infinite; // fait tourner 
+  background: none;
+  width: 20px;
+  height: 20px;
+  pointer-events: none;
+  transform-origin: 25px;
+
+  img {
+    
+    @media only screen and (min-width: 300px) {
+      transform: translateX(-40px) translateY(-40px); // éloigne du soleil
+      width: 25px;
+    }
+    @media only screen and (min-width: 420px) {
+      transform: translateX(-65px) translateY(-65px); // éloigne du soleil
+      width: 33px;
+    }
+    @media only screen and (min-width: 690px) {
+      transform: translateX(-110px) translateY(-110px); // éloigne du soleil
+      width: 50px;
+    }
+  }
+}
+
+.moon {
+  animation: spin 20s linear infinite; // fait tourner 
+  background: none;
+  width: 20px;
+  height: 20px;
+  pointer-events: none;
+  transform-origin: 25px;
+
+  img {
+    
+    @media only screen and (min-width: 300px) {
+      transform: translateX(-50px) translateY(-50px); // éloigne du soleil
+      width: 11px;
+    }
+    @media only screen and (min-width: 420px) {
+      transform: translateX(-75px) translateY(-75px); // éloigne du soleil
+      width: 14px;
+    }
+    @media only screen and (min-width: 690px) {
+      transform: translateX(-130px) translateY(-130px); // éloigne du soleil
+      width: 22px;
+    }
+  }
+}
+
+.mars {
+  animation: spin 25s linear infinite; // fait tourner 
+  background: none;
+  width: 20px;
+  height: 20px;
+  pointer-events: none;
+  transform-origin: 25px;
+
+  img {
+    
+    @media only screen and (min-width: 300px) {
+      transform: translateX(-60px) translateY(-60px); // éloigne du soleil
+      width: 14px;
+    }
+    @media only screen and (min-width: 420px) {
+      transform: translateX(-85px) translateY(-85px); // éloigne du soleil
+      width: 18px;
+    }
+    @media only screen and (min-width: 690px) {
+      transform: translateX(-150px) translateY(-150px); // éloigne du soleil
+      width: 28px;
+    }
+  }
+}
+
+.jupiter-container {
+  animation: spin 30s linear infinite; // fait tourner 
+  background: none;
+  width: 20px;
+  height: 20px;
+  pointer-events: none;
+  transform-origin: 25px;
+
+  img {
+    
+    @media only screen and (min-width: 300px) {
+      transform: translateX(-70px) translateY(-70px); // éloigne du soleil
+      width: 35px;
+    }
+    @media only screen and (min-width: 420px) {
+      transform: translateX(-95px) translateY(-95px); // éloigne du soleil
+      width: 46px;
+    }
+    @media only screen and (min-width: 690px) {
+      transform: translateX(-170px) translateY(-170px); // éloigne du soleil
+      width: 70px;
+    }
+  }
+}
+
+.saturne-container {
+  animation: spin 35s linear infinite; // fait tourner 
+  background: none;
+  width: 20px;
+  height: 20px;
+  pointer-events: none;
+  transform-origin: 25px;
+
+  img {
+    
+    @media only screen and (min-width: 300px) {
+      transform: translateX(-80px) translateY(-80px); // éloigne du soleil
+      width: 35px;
+    }
+    @media only screen and (min-width: 420px) {
+      transform: translateX(-105px) translateY(-105px); // éloigne du soleil
+      width: 46px;
+    }
+    @media only screen and (min-width: 690px) {
+      transform: translateX(-190px) translateY(-190px); // éloigne du soleil
+      width: 70px;
+    }
+  }
+}
+
+
+.uranus {
+  animation: spin 40s linear infinite; // fait tourner 
+  background: none;
+  width: 20px;
+  height: 20px;
+  pointer-events: none;
+  transform-origin: 25px;
+
+  img {
+    
+    @media only screen and (min-width: 300px) {
+      transform: translateX(-90px) translateY(-90px); // éloigne du soleil
+      width: 20px;
+    }
+    @media only screen and (min-width: 420px) {
+      transform: translateX(-115px) translateY(-115px); // éloigne du soleil
+      width: 26px;
+    }
+    @media only screen and (min-width: 690px) {
+      transform: translateX(-210px) translateY(-210px); // éloigne du soleil
+      width: 40px;
+    }
+  }
+}
+
+.neptune {
+  animation: spin 45s linear infinite; // fait tourner 
+  background: none;
+  width: 20px;
+  height: 20px;
+  pointer-events: none;
+  transform-origin: 25px;
+  
+
+  img {
+    
+    @media only screen and (min-width: 300px) {
+      transform: translateX(-95px) translateY(-95px); // éloigne du soleil
+      width: 25px;
+    }
+    @media only screen and (min-width: 420px) {
+      transform: translateX(-125px) translateY(-125px); // éloigne du soleil
+      width: 33px;
+    }
+    @media only screen and (min-width: 690px) {
+      transform: translateX(-230px) translateY(-230px); // éloigne du soleil
+      width: 50px;
+    }
+  }
+}
+
+.soleil img, .mercure img, .venus img{
+  border-radius: 50%;
+  box-shadow: 0 0 12em 1em rgba(110, 140, 200, .6);
+}
+
+.planetes {
+  transition: all 2s cubic-bezier(0,1.5,.3,1);
+}
+
+@keyframes spin {
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+#mercure:hover {
+  transform: scale(1.4);
+}
+
+.etoile{
+  position: absolute;
+  width: 100px;
+  left: 5%;
+  top: 15%;
+  transition: .3s;
+  animation: anim 1.5s linear infinite;
+
+}
+
+@keyframes anim {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

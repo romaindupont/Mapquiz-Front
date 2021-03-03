@@ -1,0 +1,101 @@
+@use './../../styles/vars';
+
+.checkboxWrapper { 
+  
+  position: relative; 
+  margin: 20px; 
+  -webkit-border-radius: 60px; 
+  -moz-border-radius: 60px; 
+  border-radius: 60px; 
+  border: 2px solid white;
+  @media only screen and (min-width: 300px) {
+    width: 60px;
+    height: 21px; 
+  }
+  @media only screen and (min-width: 420px) {
+    width: 75px;
+    height: 24px;
+  }
+  @media only screen and (min-width: 690px) {
+    width: 90px; 
+    height: 30px;  
+  }
+}
+.checkboxWrapper label { 
+  position: absolute; 
+  left: 60px; 
+  top: 0px; 
+  width: 56px; 
+  height: 56px; 
+  -webkit-border-radius: 28px; 
+  -moz-border-radius: 28px; 
+  border-radius: 28px; 
+  -webkit-transition: .2s; 
+  -moz-transition: .2s; 
+  -ms-transition: .2s; 
+  -o-transition: .2s; 
+  transition: .2s; cursor: pointer; 
+  @media only screen and (min-width: 300px) {
+    left: 40px; 
+  }
+  @media only screen and (min-width: 420px) {
+    left: 51px;
+  }
+  @media only screen and (min-width: 690px) {
+    left: 60px;   
+  }
+}
+.checkboxWrapper img { 
+  position: absolute; 
+  top: 2px; left: 0; 
+  
+  pointer-events: none; 
+  @media only screen and (min-width: 300px) {
+    width: 17px;
+  }
+  @media only screen and (min-width: 420px) {
+    width: 20px;
+  }
+  @media only screen and (min-width: 690px) {
+    width: 26px;
+  }
+}
+.checkboxWrapper img  { 
+  stroke: #fff; 
+  stroke-linecap: round; 
+  stroke-width: 4; 
+  -webkit-transition: 
+  opacity 0.1s; 
+  transition: opacity 0.1s; 
+  fill: none; 
+  -webkit-transition: 
+  stroke-dashoffset 0.2s; 
+  transition: stroke-dashoffset 0.2s; 
+}
+.checkboxWrapper .checkmark  { 
+  opacity: 0; 
+}
+.checkboxWrapper .checkmark path:first-child{ 
+  stroke-dashoffset: 27px; 
+}
+.checkboxWrapper .checkmark path:last-child{ 
+  stroke-dashoffset: 11px; 
+}
+.checkboxWrapper .cross  { 
+  opacity: 1; 
+  stroke-dashoffset: 0px; 
+}
+.checkboxWrapper input[type=checkbox] { 
+  display: none; 
+}
+.checkboxWrapper input[type=checkbox]:checked + label { left: 4px; 
+
+}
+.checkboxWrapper input[type=checkbox]:checked + label .checkmark { 
+  opacity: 1; 
+  stroke-dashoffset: 0px; 
+}
+.checkboxWrapper input[type=checkbox]:checked + label .cross  { 
+  opacity: 0; 
+  stroke-dashoffset: 13px; 
+}
