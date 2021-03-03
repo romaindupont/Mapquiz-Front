@@ -290,6 +290,9 @@
   font-weight: lighter;
   font-size: 1.1rem;
   padding-left: 0.3rem;
+  @media only screen and (max-width: 420px) {
+    font-size: 0.8rem;
+  }
 }
 
 .menu-modal--deconnexion{
@@ -308,6 +311,11 @@
   transition: 0.3s;
     &:hover {
       transform: scale(1.1);
+    }
+    @media only screen and (max-width: 420px) {
+      width: 5rem;
+      font-size: 0.5rem;
+      margin: 29%;
     }
 }
 
@@ -340,6 +348,9 @@ background: white;
   height: 110px;
   width: 40%;
   margin: 1rem auto;
+  @media only screen and (max-width: 420px) {
+    height: 80px;
+  }
 }
 .menu-modal--8 {
   background-image: url("../../assets/images/canard.png");
@@ -348,6 +359,9 @@ background: white;
   height: 110px;
   width: 40%;
   margin: 1rem auto;
+  @media only screen and (max-width: 420px) {
+    height: 80px;
+  }
 }
 
 
@@ -358,6 +372,9 @@ background: white;
   height: 110px;
   width: 40%;
   margin: 1rem auto;
+  @media only screen and (max-width: 420px) {
+    height: 80px;
+  }
 }
 
 .menu-modal--5 {
@@ -367,6 +384,9 @@ background: white;
   height: 110px;
   width: 40%;
   margin: 1rem auto;
+  @media only screen and (max-width: 420px) {
+    height: 80px;
+  }
 }
 .menu-modal--4 {
   background-image: url("../../assets/images/marmotte.png");
@@ -375,6 +395,9 @@ background: white;
   height: 110px;
   width: 40%;
   margin: 1rem auto;
+  @media only screen and (max-width: 420px) {
+    height: 80px;
+  }
 }
 
 .menu-modal--1 {
@@ -384,6 +407,9 @@ background: white;
   height: 110px;
   width: 40%;
   margin: 1rem auto;
+  @media only screen and (max-width: 420px) {
+    height: 80px;
+  }
 }
 
 .menu-modal--7 {
@@ -393,6 +419,9 @@ background: white;
   height: 110px;
   width: 40%;
   margin: 1rem auto;
+  @media only screen and (max-width: 420px) {
+    height: 80px;
+  }
 }
 .menu-modal--3 {
   background-image: url("../../assets/images/surfboard.png");
@@ -401,4 +430,7 @@ background: white;
   height: 110px;
   width: 40%;
   margin: 1rem auto;
+  @media only screen and (max-width: 420px) {
+    height: 80px;
+  }
 }
