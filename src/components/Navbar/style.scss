@@ -56,10 +56,17 @@
   }
 
   &-help {
-    width: 4.45rem;
     transition: 0.3s;
-    // &:hover {
-    //   width: 5rem;
-    // }
+    @media only screen and (min-width: 300px) {
+      margin-left: 80px;
+      width: 3rem;
+    }
+    @media only screen and (min-width: 420px) {
+      margin-left: 35px;
+      width: 4.45rem;
+    }
+    @media only screen and (min-width: 690px) {
+      width: 4.45rem;
+    }
   }
 }
