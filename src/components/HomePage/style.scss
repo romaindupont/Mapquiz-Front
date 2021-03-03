@@ -14,7 +14,7 @@
 
     &-bloc {
         padding-left: 6rem;
-        padding-top: 2rem;
+        padding-top: 10rem;
         max-width: 35%;
 
         @media only screen and (max-width: 810px) {
@@ -75,7 +75,8 @@
         font-weight: lighter;
         border-bottom: #FF98AF solid 4px;
         margin-top: 1rem;
-        display: inline-block;
+        display: inline-flex;
+        align-items: center;
         cursor: url('../../assets/images/cursor.png'), pointer;
         outline: none;
         @media only screen and (max-width: 810px) {
