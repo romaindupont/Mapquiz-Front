@@ -32,7 +32,7 @@ const Menu = ({
 
   return (
     <div className="app">
-
+      
       <div className={classNames('menu-modal', { 'menu-modal--open': open })}>
         <nav className={classNames('menu-modal--nav', { 'menu-modal--nav--open': open })}>
           {isConnected ? (
@@ -43,6 +43,7 @@ const Menu = ({
               <div className={`menu-modal--${avatar_id}`} />
               <li className="menu-modal--li"><Link className="menu-modal--link" to="/mes-preferences">Mes préférences</Link></li>
               <li className="menu-modal--li"><Link className="menu-modal--link" to="/trophees">Mes trophées</Link></li>
+              <li className="menu-modal--li"><Link className="menu-modal--help-connect" to="/manual">Besoin d'aide</Link></li>
             </>
           ) : (
             <form className="menu-modal--form" onSubmit={handleSubmit}>
@@ -67,6 +68,7 @@ const Menu = ({
               <button className="menu-modal--buton" type="submit">Connexion</button>
               <Link className="menu-modal--account" to="/inscription">Pas encore de compte ?</Link>
               <Link className="menu-modal--account" to="/cgu">CGU</Link>
+              <Link className="menu-modal--help" to="/manual">Besoin d'aide</Link>
             </form>
           )}
           <li className="menu-modal--li"><Link className="menu-modal--link" to="/team">Nous connaître</Link></li>

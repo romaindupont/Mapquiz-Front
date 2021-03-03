@@ -9,7 +9,7 @@ const Error = () => {
   const location = useLocation();
   return (
     <div className="error">
-      <h1 className="error-title">404</h1>
+      <h1 className="error-title">{location.pathname === '/mes-preferences' || location.pathname === '/trophees' ? '403' : '404' }</h1>
       <Link to="/" className="error-btn">Accueil</Link>
       <p className="error-content">{location.pathname === '/mes-preferences' || location.pathname === '/trophees' ? 'Tu dois être connecté pour accéder à cette page.' : 'Tu t\'es égaré ?' }</p>
     </div>
