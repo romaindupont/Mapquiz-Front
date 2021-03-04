@@ -29,7 +29,7 @@ const QuestionForm = ({ isShowing, hide, questions }) => {
     if (isShowing === false) {
       return setCurrentQuestion(0), setAction(false);
     }
-  },[]);
+  },[isShowing]);
   return (
     (isShowing
       ? ReactDOM.createPortal(
